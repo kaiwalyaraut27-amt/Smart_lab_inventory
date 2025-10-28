@@ -1,0 +1,55 @@
+[2025-10-27T11:42:34.367Z] approveRequest START request_id=46 item_id=11 current_item_qty=10 request_qty=2
+[2025-10-27T11:42:34.373Z] approveRequest AFTER_UPDATE request_id=46 item_id=11 decremented_by=2
+[2025-10-27T11:43:51.241Z] approveRequest START request_id=47 item_id=12 current_item_qty=10 request_qty=2
+[2025-10-27T11:44:28.207Z] approveRequest START request_id=48 item_id=13 current_item_qty=10 request_qty=2
+[2025-10-27T11:44:28.214Z] approveRequest AFTER_UPDATE request_id=48 item_id=13 decremented_by=2 new_qty=6
+[2025-10-27T11:46:09.784Z] approveRequest START request_id=49 item_id=14 current_item_qty=10 request_qty=2
+[2025-10-27T11:46:09.789Z] EXECUTE_UPDATE_PARAMS [2,14]
+[2025-10-27T11:46:09.794Z] approveRequest AFTER_UPDATE request_id=49 item_id=14 decremented_by=2 new_qty=6
+[2025-10-27T11:51:59.191Z] approveRequest START request_id=50 item_id=8 current_item_qty=14 request_qty=4
+[2025-10-27T11:51:59.195Z] EXECUTE_UPDATE_PARAMS [4,8]
+[2025-10-27T11:51:59.202Z] approveRequest AFTER_UPDATE request_id=50 item_id=8 decremented_by=4 new_qty=6
+[2025-10-27T11:53:26.839Z] approveRequest START request_id=51 item_id=8 current_item_qty=10 request_qty=4
+[2025-10-27T11:53:26.850Z] EXECUTE_UPDATE_PARAMS [4,8]
+[2025-10-27T11:53:26.855Z] approveRequest AFTER_UPDATE request_id=51 item_id=8 decremented_by=4 new_qty=2
+[2025-10-27T12:43:49.435Z] approveRequest START request_id=52 item_id=8 current_item_qty=10 request_qty=5
+[2025-10-27T12:43:49.442Z] EXECUTE_UPDATE_PARAMS [5,8]
+[2025-10-27T12:43:49.449Z] approveRequest AFTER_UPDATE request_id=52 item_id=8 decremented_by=5 new_qty=0
+[2025-10-27T12:48:16.882Z] approveRequest START request_id=53 item_id=15 current_item_qty=10 request_qty=2
+[2025-10-27T12:48:16.883Z] EXECUTE_UPDATE_PARAMS [8,15]
+[2025-10-27T12:48:16.888Z] approveRequest AFTER_UPDATE request_id=53 item_id=15 decremented_by=2 new_qty=8
+[2025-10-27T12:48:36.167Z] approveRequest START request_id=54 item_id=16 current_item_qty=10 request_qty=2
+[2025-10-27T12:48:36.168Z] EXECUTE_UPDATE_PARAMS [8,16]
+[2025-10-27T12:48:36.171Z] approveRequest AFTER_UPDATE request_id=54 item_id=16 decremented_by=2 new_qty=8
+[2025-10-27T12:51:13.483Z] approveRequest START request_id=55 item_id=17 current_item_qty=10 request_qty=5
+[2025-10-27T12:51:13.484Z] EXECUTE_UPDATE_PARAMS [5,17]
+[2025-10-27T12:51:13.489Z] approveRequest AFTER_UPDATE request_id=55 item_id=17 decremented_by=5 new_qty=5
+[2025-10-27T12:52:25.980Z] approveRequest START request_id=56 item_id=8 current_item_qty=10 request_qty=5
+[2025-10-27T12:52:25.982Z] EXECUTE_UPDATE_PARAMS [5,8]
+[2025-10-27T12:52:25.989Z] approveRequest AFTER_UPDATE request_id=56 item_id=8 decremented_by=5 new_qty=5
+[2025-10-27T12:53:02.770Z] approveRequest START request_id=56 item_id=8 current_item_qty=5 request_qty=5
+[2025-10-27T12:53:02.776Z] EXECUTE_UPDATE_PARAMS [0,8]
+[2025-10-27T12:53:02.787Z] approveRequest AFTER_UPDATE request_id=56 item_id=8 decremented_by=5 new_qty=0
+[2025-10-27T12:55:52.826Z] approveRequest START request_id=57 item_id=8 current_item_qty=10 request_qty=5
+[2025-10-27T12:55:52.834Z] EXECUTE_UPDATE_PARAMS [5,8]
+[2025-10-27T12:55:52.843Z] approveRequest AFTER_UPDATE request_id=57 item_id=8 decremented_by=5 new_qty=5
+[2025-10-27T12:56:37.660Z] approveRequest START request_id=57 item_id=8 current_item_qty=5 request_qty=5
+[2025-10-27T12:56:37.665Z] EXECUTE_UPDATE_PARAMS [0,8]
+[2025-10-27T12:56:37.673Z] approveRequest AFTER_UPDATE request_id=57 item_id=8 decremented_by=5 new_qty=0
+[2025-10-27T12:58:35.102Z] approveRequest START request_id=58 item_id=18 current_item_qty=10 request_qty=5
+[2025-10-27T12:58:35.103Z] EXECUTE_UPDATE_PARAMS [5,18]
+[2025-10-27T12:58:35.106Z] approveRequest AFTER_UPDATE request_id=58 item_id=18 decremented_by=5 new_qty=5
+[2025-10-27T12:59:38.799Z] approveRequest START request_id=59 item_id=19 current_item_qty=10 request_qty=5
+[2025-10-27T12:59:38.804Z] EXECUTE_UPDATE_PARAMS [5,19]
+[2025-10-27T12:59:38.808Z] approveRequest AFTER_UPDATE request_id=59 item_id=19 decremented_by=5 new_qty=5
+[2025-10-27T13:00:23.437Z] approveRequest START request_id=60 item_id=20 current_item_qty=10 request_qty=5
+[2025-10-27T13:00:23.439Z] EXECUTE_UPDATE_PARAMS [5,20]
+[2025-10-27T13:00:23.442Z] approveRequest AFTER_UPDATE request_id=60 item_id=20 decremented_by=5 new_qty=5
+[2025-10-27T13:05:24.323Z] approveRequest START request_id=57 item_id=8 current_item_qty=-5 request_qty=5
+[2025-10-27T13:05:29.052Z] approveRequest START request_id=57 item_id=8 current_item_qty=-5 request_qty=5
+[2025-10-27T13:06:21.624Z] approveRequest START request_id=61 item_id=8 current_item_qty=5 request_qty=5
+[2025-10-27T13:06:21.627Z] EXECUTE_UPDATE_PARAMS [0,8]
+[2025-10-27T13:06:21.633Z] approveRequest AFTER_UPDATE request_id=61 item_id=8 decremented_by=5 new_qty=0
+[2025-10-27T13:32:29.796Z] approveRequest START request_id=62 item_id=8 current_item_qty=6 request_qty=4
+[2025-10-27T13:32:29.798Z] EXECUTE_UPDATE_PARAMS [2,8]
+[2025-10-27T13:32:29.805Z] approveRequest AFTER_UPDATE request_id=62 item_id=8 decremented_by=4 new_qty=2
