@@ -8,6 +8,22 @@ const { errorHandler } = require('./middlewares/errorMiddleware');
 dotenv.config();
 
 const app = express();
+app.use(express.json());
+
+// ✅ CORS: allow your deployed frontend
+const ALLOWED_ORIGINS = [
+  'https://smart-lab-frontend-93jq.onrender.com', // your Render frontend URL
+  // add localhost for local testing if you want:
+  'http://localhost:5173'
+];
+
+app.use(cors({
+  origin: ALLOWED_ORIGINS,
+  methods: ['GET','POST','PUT','DELETE','OPTIONS'],
+  credentials: true,
+}));
+app.options('*', cors()); // handle preflight
+
 
 // Basic middlewares
 app.use(helmet());
