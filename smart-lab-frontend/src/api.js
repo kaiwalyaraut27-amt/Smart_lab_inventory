@@ -6,30 +6,6 @@ const API_BASE =
     ? "http://localhost:5050/api" // used when running locally
     : "https://smart-lab-inventory.onrender.com/api"; // 🔥 your Render backend URL
 
-// 🧠 Helper to safely parse JSON responses
-async function safeFetch(url, options = {}) {
-  try {
-    const res = await fetch(url, options);
-    const text = await res.text();
-    let data;
-    try {
-      data = JSON.parse(text);
-    } catch (parseErr) {
-      console.error('[api] Server returned non-JSON:', text);
-      return { success: false, message: 'Invalid server response' };
-    }
-
-    if (!res.ok) {
-      return { success: false, message: data.message || `Request failed (${res.status})` };
-    }
-
-    return data;
-  } catch (err) {
-    console.error('[api] Fetch error:', err);
-    return { success: false, message: 'Server not reachable' };
-  }
-}
-
 
 // (Keep the rest of your functions — signupUser, getSubjects, createRequest, etc.)
 
