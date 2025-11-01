@@ -133,7 +133,7 @@ export async function getMyRequests(token) {
 
 // Admin: All Requests
 export async function getAllRequests(token) {
-  return safeFetch("http://localhost:5050/api/requests", {
+  return safeFetch(`${API_BASE}/requests`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -141,7 +141,6 @@ export async function getAllRequests(token) {
     },
   });
 }
-
 
 // Admin Approve/Deny
 export async function approveRequest(id, token) {
