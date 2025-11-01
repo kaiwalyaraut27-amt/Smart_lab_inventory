@@ -1,5 +1,5 @@
 // ✅ src/api.js
-const API_BASE = "https://smart-lab-inventory.onrender.com"; // Backend base URL
+const API_BASE = "https://smart-lab-inventory.onrender.com/api"; // Backend base URL
 
 // 🧠 Helper to safely parse JSON responses
 async function safeFetch(url, options = {}) {
