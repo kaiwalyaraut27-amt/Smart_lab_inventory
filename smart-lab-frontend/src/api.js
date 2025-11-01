@@ -1,5 +1,45 @@
 // ✅ src/api.js
-const API_BASE = "https://smart-lab-inventory.onrender.com/api"; // Backend base URL
+
+// Automatically switch between local and deployed URLs
+const API_BASE =
+  import.meta.env.MODE === "development"
+    ? "http://localhost:5050/api" // used when running locally
+    : "https://smart-lab-inventory.onrender.com/api"; // 🔥 your Render backend URL
+
+// 🧠 Helper to safely parse JSON responses
+async function safeFetch(url, options = {}) {
+  try {
+    const res = await fetch(url, options);
+    const text = await res.text();
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch (parseErr) {
+      console.error('[api] Server returned non-JSON:', text);
+      return { success: false, message: 'Invalid server response' };
+    }
+
+    if (!res.ok) {
+      return { success: false, message: data.message || `Request failed (${res.status})` };
+    }
+
+    return data;
+  } catch (err) {
+    console.error('[api] Fetch error:', err);
+    return { success: false, message: 'Server not reachable' };
+  }
+}
+
+// ✅ Example API usage
+export async function loginUser(data) {
+  return safeFetch(`${API_BASE}/auth/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+}
+
+// (Keep the rest of your functions — signupUser, getSubjects, createRequest, etc.)
 
 // 🧠 Helper to safely parse JSON responses
 async function safeFetch(url, options = {}) {
