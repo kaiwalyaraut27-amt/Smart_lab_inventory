@@ -30,14 +30,6 @@ async function safeFetch(url, options = {}) {
   }
 }
 
-// ✅ Example API usage
-export async function loginUser(data) {
-  return safeFetch(`${API_BASE}/auth/login`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data),
-  });
-}
 
 // (Keep the rest of your functions — signupUser, getSubjects, createRequest, etc.)
 
